@@ -5,17 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Monitoring"
         mc:Ignorable="d"
-        Title="Moniteur - MC" Height="580" Width="815">
+        Title="Moniteur - MC" Height="400" Width="815">
     <Grid>
-        <Label x:Name="OS_name" Content="OS_name" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="OS_Arch" Content="OS_Arch" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="procName" Content="Proc Name" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="Number_of_cpu_core_physical" Content="CPU_core_physical" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="Number_of_cpu_core_logical" Content="CPU_core_logical" HorizontalAlignment="Left" Margin="10,156,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="SerialNumber" Content="SerialNumber" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="Nom_ram" Content="NomRam" HorizontalAlignment="Left" Margin="10,187,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="Size_Disk" Content="SizeDisk" HorizontalAlignment="Left" Margin="131,213,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="Name_Disk" Content="NameDisk" HorizontalAlignment="Left" Margin="12,218,0,0" VerticalAlignment="Top"/>
+        <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Grid HorizontalAlignment="Center" Height="70" VerticalAlignment="Top" Width="352">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="OS_name" Content="OS_name" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.382,0.579" Margin="27,0,0,0" Height="28"/>
+                <Label x:Name="procName" Content="Proc Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,33,0,0" Height="29"/>
+            </Grid>
+            <Image x:Name="image_pc" HorizontalAlignment="Left" Height="28" Margin="0,1,0,0" VerticalAlignment="Top" Width="30" Source="C:\Users\MChouzy\Desktop\GIT\Monitoring\Monitoring\Monitoring\Images\os.png" RenderTransformOrigin="1.204,0.614"/>
+            <Image x:Name="image_pc_Copy" HorizontalAlignment="Left" Height="28" Margin="0,33,0,0" VerticalAlignment="Top" Width="30" Source="C:\Users\MChouzy\Desktop\GIT\Monitoring\Monitoring\Monitoring\Images\proc.png" RenderTransformOrigin="1.204,0.614"/>
+
+        </Grid>
+        <Label x:Name="Number_of_cpu_core_physical" Content="CPU_core_physical" HorizontalAlignment="Left" Margin="8,121,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Number_of_cpu_core_logical" Content="CPU_core_logical" HorizontalAlignment="Left" Margin="8,152,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Nom_ram" Content="NomRam" HorizontalAlignment="Left" Margin="8,183,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Size_Disk" Content="SizeDisk" HorizontalAlignment="Left" Margin="89,214,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Name_Disk" Content="NameDisk" HorizontalAlignment="Left" Margin="10,214,0,0" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="362,121,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>

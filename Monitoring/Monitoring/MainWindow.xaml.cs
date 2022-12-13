@@ -27,12 +27,10 @@ namespace Monitoring
             InitializeComponent();
 
             SystemInfo si = new SystemInfo();
-            OS_name.Content = "OS " + si.GetOsInfos("os");
-            OS_Arch.Content = "Architecture " + si.GetOsInfos("arch");
+            OS_name.Content = si.GetOsInfos("os") + " " + si.GetOsInfos("arch");
             procName.Content = "Processeur " + si.GetInformations("Name");
             Number_of_cpu_core_physical.Content = si.GetCoreCpu() + " coeurs";
             Number_of_cpu_core_logical.Content = si.GetCoreCpuLogical() + " threads";
-            SerialNumber.Content = si.GetInformations("SerialNumber");
             // Nom_ram.Content = si.GetMemoryInformations("OtherIdentifyingInfo");
             Size_Disk.Content = si.GetDiskSize();
             Name_Disk.Content = si.GetDiskName();
@@ -148,10 +146,10 @@ namespace Monitoring
 
         public string GetDiskName()
         {
-            ManagementObjectSearcher searcher = new ManagementObjectSearcher("select NAME from Win32_DiskDrive");
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher("select SystemName from Win32_DiskDrive");
             foreach (ManagementObject disk in searcher.Get())
             {
-                string disk_name = (disk["Name"].ToString());
+                string disk_name = (disk["SystemName"].ToString());
                 return disk_name;
             }
             return "";
