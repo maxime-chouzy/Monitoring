@@ -8,7 +8,7 @@
         Title="Moniteur - MC" Height="400" Width="815">
     <Grid>
         <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
-            <Grid HorizontalAlignment="Center" Height="70" VerticalAlignment="Top" Width="352">
+            <Grid HorizontalAlignment="Center" Height="113" VerticalAlignment="Top" Width="352">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
@@ -17,13 +17,14 @@
             </Grid>
             <Image x:Name="image_pc" HorizontalAlignment="Left" Height="28" Margin="0,1,0,0" VerticalAlignment="Top" Width="30" Source="C:\Users\MChouzy\Desktop\GIT\Monitoring\Monitoring\Monitoring\Images\os.png" RenderTransformOrigin="1.204,0.614"/>
             <Image x:Name="image_pc_Copy" HorizontalAlignment="Left" Height="28" Margin="0,33,0,0" VerticalAlignment="Top" Width="30" Source="C:\Users\MChouzy\Desktop\GIT\Monitoring\Monitoring\Monitoring\Images\proc.png" RenderTransformOrigin="1.204,0.614"/>
+            <Image x:Name="image_pc_Copy1" HorizontalAlignment="Left" Height="28" Margin="0,134,0,0" VerticalAlignment="Top" Width="30" Source="C:\Users\MChouzy\Desktop\GIT\Monitoring\Monitoring\Monitoring\Images\disk.png" RenderTransformOrigin="1.204,0.614"/>
 
         </Grid>
-        <Label x:Name="Number_of_cpu_core_physical" Content="CPU_core_physical" HorizontalAlignment="Left" Margin="8,121,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="Number_of_cpu_core_logical" Content="CPU_core_logical" HorizontalAlignment="Left" Margin="8,152,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Number_of_cpu_core_physical" Content="CPU_core_physical" HorizontalAlignment="Left" Margin="25,56,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Number_of_cpu_core_logical" Content="CPU_core_logical" HorizontalAlignment="Left" Margin="25,82,0,0" VerticalAlignment="Top"/>
         <Label x:Name="Nom_ram" Content="NomRam" HorizontalAlignment="Left" Margin="8,183,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="Size_Disk" Content="SizeDisk" HorizontalAlignment="Left" Margin="89,214,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="Name_Disk" Content="NameDisk" HorizontalAlignment="Left" Margin="10,214,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Size_Disk" Content="SizeDisk" HorizontalAlignment="Left" Margin="204,136,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Name_Disk" Content="NameDisk" HorizontalAlignment="Left" Margin="25,136,0,0" VerticalAlignment="Top"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="362,121,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>

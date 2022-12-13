@@ -146,7 +146,7 @@ namespace Monitoring
 
         public string GetDiskName()
         {
-            ManagementObjectSearcher searcher = new ManagementObjectSearcher("select SystemName from Win32_DiskDrive");
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher("select SystemName from Win32_DiskPartition");
             foreach (ManagementObject disk in searcher.Get())
             {
                 string disk_name = (disk["SystemName"].ToString());
