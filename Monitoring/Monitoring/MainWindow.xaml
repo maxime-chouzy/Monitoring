@@ -1,0 +1,21 @@
+﻿<Window x:Class="Monitoring.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Monitoring"
+        mc:Ignorable="d"
+        Title="Moniteur - MC" Height="580" Width="815">
+    <Grid>
+        <Label x:Name="OS_name" Content="OS_name" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="OS_Arch" Content="OS_Arch" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="procName" Content="Proc Name" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Number_of_cpu_core_physical" Content="CPU_core_physical" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Number_of_cpu_core_logical" Content="CPU_core_logical" HorizontalAlignment="Left" Margin="10,156,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="SerialNumber" Content="SerialNumber" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Nom_ram" Content="NomRam" HorizontalAlignment="Left" Margin="10,187,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Size_Disk" Content="SizeDisk" HorizontalAlignment="Left" Margin="131,213,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Name_Disk" Content="NameDisk" HorizontalAlignment="Left" Margin="12,218,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
