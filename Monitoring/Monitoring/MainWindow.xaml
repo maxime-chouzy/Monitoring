@@ -23,7 +23,7 @@
         <Label x:Name="Number_of_cpu_core_physical" Content="CPU_core_physical" HorizontalAlignment="Left" Margin="25,56,0,0" VerticalAlignment="Top"/>
         <Label x:Name="Number_of_cpu_core_logical" Content="CPU_core_logical" HorizontalAlignment="Left" Margin="25,82,0,0" VerticalAlignment="Top"/>
         <Label x:Name="Nom_ram" Content="NomRam" HorizontalAlignment="Left" Margin="8,183,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="Size_Disk" Content="SizeDisk" HorizontalAlignment="Left" Margin="204,136,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Size_Disk" Content="SizeDisk" HorizontalAlignment="Left" Margin="115,136,0,0" VerticalAlignment="Top"/>
         <Label x:Name="Name_Disk" Content="NameDisk" HorizontalAlignment="Left" Margin="25,136,0,0" VerticalAlignment="Top"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="362,121,0,0" VerticalAlignment="Top" Width="100"/>
 
